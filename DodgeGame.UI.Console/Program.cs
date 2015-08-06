@@ -11,6 +11,7 @@ namespace DodgeGame.UI.Console1
     {
         static void Main(string[] args)
         {
+            //Hello World
             //Application bootstrapping
             var gameBoard = new GameBoard(10);
             var player = new Player(gameBoard);

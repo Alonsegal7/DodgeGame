@@ -16,17 +16,15 @@ namespace DodgeGame.BL
         {
             _size = size;
         }
-
         public void SetPlayerPosition(Coordinate coordinate)
         {
             _playerPosition = coordinate;
         }
-
         public void SetEnemyPosition(Coordinate coordinate)
         {
             _enemiesPositions.Add(coordinate);
         }
-
+        //Player Movement
         internal void MovePlayerRight()
         {
             if (_playerPosition.X < _size - 1)
@@ -34,7 +32,28 @@ namespace DodgeGame.BL
                 _playerPosition.X += 1;
             }
         }
-
+        internal void MovePlayerLeft() 
+        {
+            if (_playerPosition.X > _size + 1)
+            {
+                _playerPosition.X -= 1;
+            }
+        }
+        internal void MovePlayerTop()
+        {
+            if (_playerPosition.Y > _size + 1)
+            {
+                _playerPosition.Y -= 1;
+            }
+        }
+        internal void MovePlayerBottom()
+        {
+            if (_playerPosition.Y < _size - 1)
+            {
+                _playerPosition.Y += 1;
+            }
+        }
+        //Enemy movmwnt
         internal void MoveEnemyRight()
         {
             var enemy = _enemiesPositions[0];

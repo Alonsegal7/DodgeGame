@@ -13,7 +13,6 @@ namespace DodgeGame.BL
             Random r1 = new Random();
             var randomX = r1.Next(10);
             var randomY = r1.Next(10);
-
             return new Coordinate { X = randomX, Y = randomY };
         } 
     }

@@ -19,10 +19,21 @@ namespace DodgeGame.BL
         {
             _gameBoard.SetPlayerPosition(coordinate);
         }
-
         public void MoveRight()
         {
             _gameBoard.MovePlayerRight();            
+        }
+        public void MoveLeft()
+        {
+            _gameBoard.MovePlayerLeft();
+        }
+        public void MoveTop()
+        {
+            _gameBoard.MovePlayerTop();
+        }
+        public void MoveBottom()
+        {
+            _gameBoard.MovePlayerBottom();
         }
     }
 }

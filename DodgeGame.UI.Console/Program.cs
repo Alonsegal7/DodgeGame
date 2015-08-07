@@ -16,9 +16,7 @@ namespace DodgeGame.UI.Console1
             var player = new Player(gameBoard);
             var enemy1 = new Enemy(gameBoard);
             var enemy2 = new Enemy(gameBoard);
-
-
-            //
+ 
             player.PlaceOnBoard(new RandomCoordinateGenerator().GenerateRandomPosition());
             enemy1.PlaceOnBoard(new RandomCoordinateGenerator().GenerateRandomPosition());
             enemy2.PlaceOnBoard(new RandomCoordinateGenerator().GenerateRandomPosition());
